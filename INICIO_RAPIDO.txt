@@ -1,0 +1,21 @@
+VOZLIBRO — CONVERSOR EPUB A AUDIOLIBRO IA PARA VERCEL
+====================================================
+
+1) DESCOMPRIME este ZIP.
+2) En GitHub crea un repositorio NUEVO (distinto al lector EPUB anterior).
+3) Sube TODOS los archivos del proyecto a la RAÍZ del repositorio.
+4) Importa el repositorio en Vercel: Framework Vite; Build: npm run build; Output: dist.
+5) En Vercel > Settings > Environment Variables configura:
+     ELEVENLABS_API_KEY = clave privada de https://elevenlabs.io
+     APP_ACCESS_PIN    = un PIN largo creado por ti
+6) Haz Deploy o Redeploy después de configurar las variables.
+7) Abre la URL, introduce tu PIN, conecta ElevenLabs, elige voz,
+   importa tu EPUB y haz una prueba corta antes de convertir todo.
+
+AVISOS:
+- ElevenLabs cobra/consume créditos por generar voces IA.
+- Las claves se guardan en Vercel, NUNCA en React ni en GitHub.
+- El EPUB no se sube completo; solo se envían fragmentos de texto.
+- Los MP3 generados se guardan en el navegador y se descargan por capítulo.
+- No es un servicio de conversión en segundo plano: mantén la pestaña abierta.
+- Lee README.md para límites, privacidad y solución de problemas.
